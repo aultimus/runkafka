@@ -12,3 +12,10 @@ https://kafka.apache.org/quickstart
 Then run the producer and consumer:
 `go run writer/main.go`
 `go run reader/main.go`
+
+
+You can read messages on the command line for debugging/investigating using kafkacat
+e.g.
+`
+kafkacat -b localhost:9092 -t my-topic
+`

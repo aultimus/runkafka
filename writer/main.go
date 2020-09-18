@@ -10,7 +10,7 @@ import (
 func main() {
 
 	// to produce messages
-	topic := "my-topic"
+	topic := "my-topic1"
 	partition := 0
 
 	conn, err := kafka.DialLeader(context.Background(), "tcp", "kafka:9092", topic, partition)
